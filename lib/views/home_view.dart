@@ -37,11 +37,11 @@ class _HomeViewState extends State<HomeView> {
                 children: [
                   header(getFontSize(true)),
                   SizedBox(height: screenHeight * 0.05),
-                  subHeader('Computer Scientist.', getFontSize(false)),
+                  subHeader('Fullstack Developer.', getFontSize(false)),
                   SizedBox(height: screenHeight * 0.01),
                   subHeader('App Developer.', getFontSize(false)),
                   SizedBox(height: screenHeight * 0.01),
-                  subHeader('Flutter Enthusiast.', getFontSize(false)),
+                  subHeader('Flutter Beginner.', getFontSize(false)),
                   SizedBox(height: screenHeight * 0.1),
                 ],
               ),
@@ -61,7 +61,7 @@ class _HomeViewState extends State<HomeView> {
         SizedBox(height: screenHeight * 0.02),
         header(30),
         SizedBox(height: screenHeight * 0.01),
-        subHeader('Computer Scientist - App Developer - Flutter Enthusiast', 15)
+        subHeader('Fullstack Developer - App Developer - Flutter Beginner', 15)
       ],
     );
   }
@@ -104,8 +104,8 @@ class _HomeViewState extends State<HomeView> {
         // Child text spans will inherit styles from parent
         style: ThemeSelector.selectHeadline(context),
         children: <TextSpan>[
-          TextSpan(text: 'Hi, my name is '),
-          TextSpan(text: 'Florian', style: TextStyle(color: Color(0xff21a179))),
+          TextSpan(text: 'Hi there, my name is '),
+          TextSpan(text: 'Frank', style: TextStyle(color: Color(0xff21a179))),
           TextSpan(text: '!'),
         ],
       ),
