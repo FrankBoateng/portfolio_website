@@ -14,8 +14,17 @@ class AboutView extends StatefulWidget {
 class _AboutViewState extends State<AboutView> with SingleTickerProviderStateMixin {
   late double screenWidth;
   late double screenHeight;
-  String loremIpsum =
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.';
+
+  String bulletList1 = 'Integrated Diploma - B.Tech from Nelson Mandela University with successful projects and award.';
+  String bulletList2 = 'Ability to execute all the stages project cycle.';
+  String bulletList3 = 'Ability to design and develop the business process flow as per the client requirements.';
+  String bulletList4 = 'Hard-working, sincere and quick grasping aptitude.';
+  String bulletList5 = 'Efficient time-management skills and team player with strong communication skills and inter-personal skills.';
+  String bulletList6 =
+      'I am well familiar with C#, PHP, Visual Basic, ASP.NET, JavaScript and HTML '
+      'and the basics of Java, flutter (dart) and Python. '
+      'I am well familiar with MySQL, MSSQL, Oracle, PL/SQL and '
+      'the basics of MangoDB and Firebase.';
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +51,7 @@ class _AboutViewState extends State<AboutView> with SingleTickerProviderStateMix
             Expanded(
                 flex: 3,
                 child: BulletList(
-                  strings: [loremIpsum, loremIpsum, loremIpsum, loremIpsum],
+                  strings: [bulletList1, bulletList2, bulletList3, bulletList4, bulletList5, bulletList6],
                 )),
             Spacer(flex: 1),
           ],
@@ -60,7 +69,7 @@ class _AboutViewState extends State<AboutView> with SingleTickerProviderStateMix
         Container(
           height: screenHeight * 0.3,
           child: BulletList(
-            strings: [loremIpsum, loremIpsum, loremIpsum, loremIpsum],
+            strings: [bulletList1, bulletList2, bulletList3, bulletList4, bulletList5, bulletList6],
           ),
         ),
       ],
@@ -86,9 +95,9 @@ class _AboutViewState extends State<AboutView> with SingleTickerProviderStateMix
       width: getImageSize(),
       child: ClipRRect(
           borderRadius: BorderRadius.circular(getImageSize() / 2),
-          child: Container(
-            color: Colors.grey,
-            child: Center(child: Text('PLACEHOLDER IMAGE')),
+          child: Image.asset(
+            'assets/picture1.png',
+            fit: BoxFit.cover,
           )),
     );
   }
@@ -107,7 +116,13 @@ class _AboutViewState extends State<AboutView> with SingleTickerProviderStateMix
 
   Widget infoText() {
     return Text(
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      'My name is Frank Boateng, an enthusiastic, highly-motivated person'
+      'who likes to take initiative and seek out new challenges. '
+      'I am very dedicated and hardworking software engineer / developer '
+      'with proven leadership and organizational skills seeking to apply my abilities '
+      'to any company that I will work for. '
+      'Also, to gain much knowledge as I can and enhance my programming skills '
+      'with the available and new technologies. ',
       overflow: TextOverflow.clip,
       style: ThemeSelector.selectBodyText(context),
     );

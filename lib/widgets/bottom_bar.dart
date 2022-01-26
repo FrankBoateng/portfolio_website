@@ -31,11 +31,11 @@ class BottomBar extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    CustomIconButton(
-                        iconData: FontAwesomeIcons.youtube,
-                        url: 'url',
-                        color: Colors.red),
-                    SizedBox(width: screenWidth * 0.021),
+                    // CustomIconButton(
+                    //     iconData: FontAwesomeIcons.youtube,
+                    //     url: 'url',
+                    //     color: Colors.red),
+                    // SizedBox(width: screenWidth * 0.021),
                     CustomIconButton(
                       iconData: FontAwesomeIcons.linkedin,
                       url: 'https://www.linkedin.com/in/frank-boateng-956088150/',
