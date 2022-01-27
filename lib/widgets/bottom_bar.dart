@@ -43,7 +43,7 @@ class BottomBar extends StatelessWidget {
                     ),
                   ],
                 ),
-                Text('Develop with Flutter Web \u00a9 2022',
+                Text('Developed with Flutter Web \u00a9 2022',
                 style: TextStyle(color: Colors.white, fontFamily: 'Barlow')),
               ],
             ),

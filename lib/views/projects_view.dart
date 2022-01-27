@@ -19,30 +19,39 @@ class _ProjectsViewState extends State<ProjectsView> {
   int selectedIndex = 0;
   List<Project> projects = [
     Project(
-        title: 'Yenko Buddy',
-        imageURL: 'project1.jpg',
+        title: 'Fleetsync',
+        imageURL: 'fleetsync.PNG',
         description:
-        'It is a transportation system that seeks to ensure the safety of passengers '
-            'throughout their journey. It consists of a website and mobile application.'),
+            'Created a website and mobile application (App) for the transport industry to promote safety. '
+            'The focus was on Taxi industry for the taxi owners to get reports on the behaviour and '
+                'attitude their drivers shown to passengers on the road.'
+                'Passengers can also click a panic button on the App to send SMS to their Next of Kins, '
+                'with the details of the taxi and driver as well as the current '
+                'location of the taxi or the passenger when their life is in danger. '
+
+                'https://www.fleetsync.co.za/'),
     Project(
-        title: 'WeeShop',
-        imageURL: 'project2.jpg',
-        description:
-        'A mini Point of Sale system for small scale businesses to eliminate '
-            'paper-based type of recording information. '
-            'It’s also consist of website and mobile application with two users (Admin and Clerk)'),
+        title: 'Mr Errand',
+        imageURL: 'errand.png',
+        description: 'Ecommerce App for monthly and daily transactions. '
+            'It help users to save money and time by queuing at various shopping centers. '
+            'Users can make changes to their selections and delete the selected products submitted before the deadline date. '
+            'Order can be place between 1st and 20th of every month. '
+            'Mr. Errand provide the following under Monthly specials. '
+            'Deliveries are made on monthly basis and its free. '
+            'Monthly deliveries are done per the users preferred date from a list of dates. '
+            'Users get email for their order summary containing order details. '
+            'https://play.google.com/store/apps/details?id=za.co.profeciait.errandboy&gl=ZA'),
 
     Project(
-        title: 'Trivia Game App',
-        imageURL: 'project3.jpg',
+        title: 'Hitman',
+        imageURL: 'hitman.jpg',
         description:
-        'Questions and answers game,'),
+        'Website and App for selling supplements '
 
-    Project(
-        title: 'Trivia Game Web',
-        imageURL: 'project3.jpg',
-        description:
-        'Questions and answers game,'),
+            'https://hitmanweb.com/'),
+
+
 
     // Project(
     //     title: 'Active Mode Website',
@@ -60,11 +69,9 @@ class _ProjectsViewState extends State<ProjectsView> {
 
   @override
   void didChangeDependencies() {
-    precacheImage(AssetImage('project1.jpg'), context);
-    precacheImage(AssetImage('project2.jpg'), context);
-    precacheImage(AssetImage('project3.jpg'), context);
-    precacheImage(AssetImage('project3.jpg'), context);
-
+    precacheImage(AssetImage('fleetsync.PNG'), context);
+    precacheImage(AssetImage('errand.png'), context);
+    precacheImage(AssetImage('hitman.jpg'), context);
 
     super.didChangeDependencies();
   }

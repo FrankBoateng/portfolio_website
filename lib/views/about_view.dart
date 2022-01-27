@@ -96,7 +96,7 @@ class _AboutViewState extends State<AboutView> with SingleTickerProviderStateMix
       child: ClipRRect(
           borderRadius: BorderRadius.circular(getImageSize() / 2),
           child: Image.asset(
-            'assets/picture1.png',
+            'assets/picture.jpg',
             fit: BoxFit.cover,
           )),
     );
